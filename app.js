@@ -16,7 +16,7 @@ simply.on('accelTap', function(e) {
   simply.subtitle('Tapped ' + (e.direction > 0 ? '+' : '-') + e.axis + '!');
 });
 
-simply.on('accelDataEvent', function(e) {
+simply.on('accelData', function(e) {
   simply.subtitle('Tapped ' + e.accel + '!');
 });
 
