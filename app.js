@@ -17,7 +17,6 @@ simply.on('accelTap', function(e) {
 });
 
 simply.setText({
-  title: 'Simply Demo!',
-  body: 'This is a demo. Press buttons or tap the watch!',
-  subtitle: simply.accelPeek,
+  title: 'Simply My Demo!',
+  body: simply.accelPeek,
 }, true);
