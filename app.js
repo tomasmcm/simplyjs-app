@@ -18,11 +18,11 @@ simply.on('accelTap', function(e) {
 });
 
 simply.on('accelData', function(e) {
-  if(e.accel.y>900){
+  if(e.accel.y>500){
   	page--;
   	simply.subtitle('UP '+page);
   }
-  if(e.accel.y<-900){
+  if(e.accel.y<-500){
   	page++;
   	simply.subtitle('DOWN '+page);
   }
