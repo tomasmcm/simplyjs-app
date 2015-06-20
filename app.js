@@ -17,7 +17,7 @@ simply.on('accelTap', function(e) {
 });
 
 simply.on('accelData', function(e) {
-  simply.subtitle('Tapped ' + e.accel.x+' 'e.accel.y + '!');
+  simply.subtitle('Tapped ' + e.accel.x + ' ' + e.accel.y + ' ' + e.accel.samples + '!');
 });
 
 simply.setText({
