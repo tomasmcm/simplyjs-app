@@ -16,7 +16,11 @@ simply.on('accelTap', function(e) {
   simply.subtitle('Tapped ' + (e.direction > 0 ? '+' : '-') + e.axis + '!');
 });
 
+simply.on('accelPeek', function(e) {
+  simply.subtitle('Tapped ' + e + '!');
+});
+
 simply.setText({
   title: 'Simply My Demo!',
-  body: simply.accelPeek,
+  body: '',
 }, true);
