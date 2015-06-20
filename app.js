@@ -2,7 +2,7 @@ console.log('Simply.js demo!');
 simply.style('mono');
 
 var page=0;
-var text = "#### Reactivos ####\n\
+var s = "#### Reactivos ####\n\
 Especifique a descrição SADA\n\
 Agente é toda a entidade mergulhada num ambiente, provida de sensores e de actuadores. São julgados de acordo com o seu desempenho na realização de uma dada tarefa.\n\
 SADA (Sensores, Actuadores , Desempenho, Ambiente).\n\
@@ -19,11 +19,11 @@ Interpretador de regras ou mecanismo de controlo (lista ordenada das regras).";
 simply.on('singleClick', function(e) {
   if(e.button=="up"){
 	page--;
-  	simply.body(text.substring(page*100));
+  	simply.body(s.substring(page*100));
   }
   if(e.button=="down"){
   	page++;
-  	simply.body(text.substring(page*100));
+  	simply.body(s.substring(page*100));
   }
 });
 
@@ -41,11 +41,11 @@ simply.on('singleClick', function(e) {
 simply.on('accelData', function(e) {
   if(e.accel.y>500){
   	page--;
-  	simply.body(text.substring(page*100));
+  	simply.body(s.substring(page*100));
   }
   if(e.accel.y<-500){
   	page++;
-  	simply.body(text.substring(page*100));
+  	simply.body(s.substring(page*100));
   }
   if(e.accel.x>900){
   	simply.body('RIGHT');
@@ -57,5 +57,5 @@ simply.on('accelData', function(e) {
 
 simply.setText({
   title: '',
-  body: text.substring(page*100),
+  body: s,
 }, true);
