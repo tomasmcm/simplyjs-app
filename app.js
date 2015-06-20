@@ -17,7 +17,7 @@ simply.on('accelTap', function(e) {
 });
 
 simply.on('accelDataEvent', function(e) {
-  simply.subtitle('Tapped ' + e + '!');
+  simply.subtitle('Tapped ' + e.accel + '!');
 });
 
 simply.setText({
