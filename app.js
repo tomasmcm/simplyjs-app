@@ -1,4 +1,5 @@
 console.log('Simply.js demo!');
+var page=0;
 
 simply.on('singleClick', function(e) {
   console.log(util2.format('single clicked $button!', e));
@@ -18,10 +19,12 @@ simply.on('accelTap', function(e) {
 
 simply.on('accelData', function(e) {
   if(e.accel.y>900){
-  	simply.subtitle('UP');
+  	page--;
+  	simply.subtitle('UP '+page);
   }
   if(e.accel.y<-900){
-  	simply.subtitle('DOWN');
+  	page++;
+  	simply.subtitle('DOWN '+page);
   }
   if(e.accel.x>900){
   	simply.subtitle('RIGHT');
